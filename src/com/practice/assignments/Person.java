@@ -10,11 +10,13 @@ public class Person {
 	public Person() {
 		super();
 		// TODO Auto-generated constructor stub
-		col="Vellanki";
+		col = "Test";
 	}
+
 	public String getCol() {
 		return col;
 	}
+
 	/**
 	 * Constructor.
 	 * 
@@ -24,7 +26,7 @@ public class Person {
 	 */
 	public Person(String firstName, String lastName, int age) {
 		super();
-		col = "Veerendra";
+		col = "Test1";
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.age = age;
@@ -59,22 +61,22 @@ public class Person {
 	}
 
 	public void addPersonAge(int addAge) throws MyException {
-			age = addAge + age;
+		age = addAge + age;
 
-			if (age >= 120 || age <= 0) {
-				age = 1;
-				throw new MyException("The Age after Addition is out of Boundry. Please try again.");
-			}
+		if (age >= 120 || age <= 0) {
+			age = 1;
+			throw new MyException("The Age after Addition is out of Boundry. Please try again.");
+		}
 	}
 
-	public void substractPersonAge(int substractAge) throws MyException{
-			age = age - substractAge;
+	public void substractPersonAge(int substractAge) throws MyException {
+		age = age - substractAge;
 
-			if (age >= 120 || age <= 0) {
-				age = 1;
-				throw new MyException("The Age after Substraction is out of Boundry. Please try again.");
-			}
-		
+		if (age >= 120 || age <= 0) {
+			age = 1;
+			throw new MyException("The Age after Substraction is out of Boundry. Please try again.");
+		}
+
 	}
 
 }

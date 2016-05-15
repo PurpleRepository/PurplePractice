@@ -4,7 +4,7 @@ public class Propagate {
 
 	public static void main(String[] args) {
 		try {
-			System.out.println(reverse("Vellanki"));
+			System.out.println(reverse("Test"));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -18,7 +18,7 @@ public class Propagate {
 		if (str.length() == 0) {
 			throw new Exception("Please enter the valid string");
 		}
-		for (int i = str.length()-1; i >= 0; i=counter(i)) {
+		for (int i = str.length() - 1; i >= 0; i = counter(i)) {
 			System.out.println(i);
 			reverseStr += str.charAt(i);
 		}
@@ -29,5 +29,5 @@ public class Propagate {
 		System.out.println(i);
 		return i--;
 	}
-	
+
 }

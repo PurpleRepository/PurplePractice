@@ -26,16 +26,16 @@ public class PersonTest extends JFrame implements ActionListener {
 	Integer i = 5;
 
 	public void testVarArgs(String str, int... x) {
-		System.out.println(x[0]);//TODO:Array index out of boundary exception
+		System.out.println(x[0]);// TODO:Array index out of boundary exception
 		System.out.println(x[1]);
 	}
 
 	public PersonTest() {
 		super("Person Age Test");
-		testVarArgs("1" );
+		testVarArgs("1");
 
 		Person one = new Person();
-		Person two = new Person("Veerendra", "Vellanki", 12);
+		Person two = new Person("Test1", "Test", 12);
 		Person[] persons = { one };
 
 		// i++;
@@ -75,6 +75,7 @@ public class PersonTest extends JFrame implements ActionListener {
 		contentPane.add(panel2, BorderLayout.CENTER);
 	}
 
+	@Override
 	public void actionPerformed(ActionEvent e) {
 		Object obj = e.getSource();
 
