@@ -1,5 +1,10 @@
 package com.practice.assignments;
 
+/**
+ * @author Owner
+ * @Created 05/15/2015
+ *
+ */
 public class Person {
 
 	private String firstName;
